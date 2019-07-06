@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WriteWifiActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/tint_round_corner_bg">
+
+            <TextView
+                android:id="@+id/txt_wifi_lable"
+                android:layout_width="375dp"
+                android:layout_height="38dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/txt_wifi_lable"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/dark"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_margin="16dp" />
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="382dp"
+                android:layout_height="152dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_wifi_lable"
+                tools:layout_width="0dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:layout_marginTop="16dp">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="108dp"
+                        android:layout_height="43dp"
+                        android:layout_column="1"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="0"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="8dp"
+
+                        android:text="@string/ssid"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/dark" />
+
+                    <EditText
+                        android:id="@+id/edttxtSsid"
+                        android:layout_width="242dp"
+                        android:layout_height="match_parent"
+                        android:layout_column="2"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/white_round_corner_border"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:hint="@string/ssid_hint"
+                        android:inputType="text"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/dark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="117dp"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="0"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/password"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/dark" />
+
+                    <EditText
+                        android:id="@+id/edttxtPassword"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_column="2"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/white_round_corner_border"
+                        android:gravity="center_vertical"
+                        android:hint="@string/password_hint"
+                        android:inputType="text"
+
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/dark" />
+                </TableRow>
+
+
+            </TableLayout>
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/dark"
+        android:text="@string/confirm"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/wifiClearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/dark"
+        android:text="@string/clear"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cancelButton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/confirmButton" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/dark"
+        android:text="@string/cancel"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</android.support.constraint.ConstraintLayout>

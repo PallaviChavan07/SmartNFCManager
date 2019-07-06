@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_write"
+    tools:context=".WriteFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="387dp"
+            android:id="@+id/imageTable">
+
+            <TableRow
+                android:layout_height="135dp"
+                android:gravity="center_vertical|center">
+
+                <ImageView
+                    android:id="@+id/settingsImgButton"
+                    android:layout_width="150dp"
+                    android:layout_height="112dp"
+                    android:layout_margin="8dp"
+                    android:layout_marginTop="8dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/mute" />
+
+            </TableRow>
+
+            <TableRow android:layout_height="2px" android:background="@color/colorPrimary">
+                <TextView android:layout_span="2" android:layout_height="2px"
+                    android:layout_width="fill_parent" android:text="">
+                </TextView>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="126dp"
+                android:gravity="center_vertical|center">
+
+                <ImageView
+                    android:id="@+id/contactImgButton"
+                    android:layout_width="150dp"
+                    android:layout_height="112dp"
+                    android:layout_margin="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="28dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/contact" />
+
+            </TableRow>
+
+            <TableRow android:layout_height="2px" android:background="@color/colorPrimary">
+            <TextView android:layout_span="2" android:layout_height="2px"
+                android:layout_width="fill_parent" android:text="">
+            </TextView>
+            </TableRow>
+
+            <TableRow android:gravity="center_vertical|center">
+
+                <ImageView
+                    android:id="@+id/wifiImgButton"
+                    android:layout_width="150dp"
+                    android:layout_height="112dp"
+                    android:layout_margin="8dp"
+                    android:layout_marginTop="8dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/wifi" />
+
+            </TableRow>
+            <TableRow android:layout_height="2px" android:background="@color/colorPrimary">
+                <TextView android:layout_span="2" android:layout_height="2px"
+                    android:layout_width="fill_parent" android:text="">
+                </TextView>
+            </TableRow>
+        </TableLayout>
+
+        <!--<TableLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:layout_constraintTop_toBottomOf="@id/imageTable"-->
+            <!--android:layout_marginTop="10dp">-->
+
+
+
+            <!--&lt;!&ndash;<TableRow android:gravity="center_vertical|center">&ndash;&gt;-->
+
+                <!--&lt;!&ndash;<CheckBox&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/adminCheckBox"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:text="@string/adminCheckbox"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_margin="4dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;tools:layout_editor_absoluteX="124dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;tools:layout_editor_absoluteY="412dp" />&ndash;&gt;-->
+            <!--&lt;!&ndash;</TableRow>&ndash;&gt;-->
+
+            <!--<TableRow android:gravity="center_vertical|center">-->
+
+
+            <!--</TableRow>-->
+
+        <!--</TableLayout>-->
+
+        <TextView
+            android:id="@+id/writeMsgTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="44dp"
+            android:background="#003c3f"
+            android:padding="10dp"
+            android:text="Tap to Write"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageTable" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WriteContactActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tint_round_corner_bg"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/textConfigureContactMsg"
+                android:layout_width="234dp"
+                android:layout_height="43dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="92dp"
+                android:layout_marginTop="16dp"
+                android:paddingLeft="8dp"
+                android:text="@string/textConfigureContactMsg"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="367dp"
+                android:layout_height="260dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textConfigureContactMsg">
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:id="@+id/txtFirstNameMsg"
+                        android:layout_width="131dp"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="0"
+                        android:gravity="center_vertical"
+
+                        android:text="@string/txtFirstNameMsg"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <EditText
+                        android:id="@+id/txtFirstName"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_column="2"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="2"
+
+                        android:background="@drawable/white_round_corner_border"
+                        android:gravity="center_vertical"
+                        android:hint="First Name.."
+                        android:inputType="text"
+                        android:paddingLeft="8dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:id="@+id/txtLastNameMsg"
+                        android:layout_width="46dp"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="0"
+                        android:gravity="center_vertical"
+
+                        android:text="@string/txtLastNameMsg"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <EditText
+                        android:id="@+id/txtLastName"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_column="2"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/white_round_corner_border"
+                        android:gravity="center_vertical"
+                        android:hint="Last Name.."
+                        android:inputType="text"
+                        android:paddingLeft="8dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:id="@+id/txtEmailMsg"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="0"
+                        android:gravity="center_vertical"
+
+                        android:text="@string/txtEmailMsg"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <EditText
+                        android:id="@+id/txtEmail"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_column="2"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/white_round_corner_border"
+                        android:gravity="center_vertical"
+                        android:hint="Email.."
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="8dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:id="@+id/txtPhoneMsg"
+                        android:layout_width="153dp"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="0"
+                        android:gravity="center_vertical"
+
+                        android:text="@string/txtPhoneMsg"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <EditText
+                        android:id="@+id/txtPhone"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_column="2"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/white_round_corner_border"
+                        android:gravity="center_vertical"
+                        android:hint="Phone Number.."
+                        android:inputType="phone"
+                        android:paddingLeft="8dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                </TableRow>
+
+
+            </TableLayout>
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/contactConfirmBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/dark"
+        android:text="@string/confirm"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/contactClearBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/dark"
+        android:text="@string/clear"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/contactCancelBtn"
+        app:layout_constraintStart_toEndOf="@+id/contactConfirmBtn" />
+
+    <Button
+        android:id="@+id/contactCancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/dark"
+        android:text="@string/cancel"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

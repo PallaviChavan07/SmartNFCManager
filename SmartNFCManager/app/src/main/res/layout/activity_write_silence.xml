@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WriteSilenceActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/grpInputFP"
+            android:layout_width="349dp"
+            android:layout_height="236dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/tint_round_corner_bg"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/volumeConfigureTxt"
+                android:layout_width="304dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="16dp"
+                android:text="@string/txt_silence_lable"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:id="@+id/settingsRadioGroup"
+                android:layout_width="203dp"
+                android:layout_height="97dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/volumeConfigureTxt">
+
+                <RadioButton
+                    android:id="@+id/silenceRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:layout_weight="1"
+                    android:text="@string/silence_mod"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                <RadioButton
+                    android:id="@+id/ringerRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="@string/ringer_mode"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            </RadioGroup>
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/settingsConfirmBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/dark"
+        android:text="@string/confirm"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/settingsCancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/dark"
+        android:text="@string/cancel"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/settingsClearBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/dark"
+        android:text="@string/clear"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/settingsCancelBtn"
+        app:layout_constraintStart_toEndOf="@+id/settingsConfirmBtn" />
+</android.support.constraint.ConstraintLayout>

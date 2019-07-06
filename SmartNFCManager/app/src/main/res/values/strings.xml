@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">Smart NFC Manager</string>
+    <string name="no_nfc_support">This device is not NFC capable</string>
+    <string name="nfc_not_enabled">NFC is disabled. Please enable it in settings</string>
+
+    <string name="read_tab_text">READ</string>
+    <string name="write_tab_text">WRITE</string>
+    <string name="action_settings">Settings</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="approach_text">Please Tap on the NFC Tag</string>
+    <string name="txt_wifi_lable">Configure Wi-Fi network</string>
+    <string name="ssid">SSID:</string>
+    <string name="password">Password:</string>
+    <string name="ssid_hint">Your SSID</string>
+    <string name="password_hint">Your Password</string>
+    <string name="ssidEmptyMsg">Please enter SSID</string>
+    <string name="passwordEmptyMsg">Please enter password</string>
+
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="clear">Clear</string>
+
+    <string name="title_write_wifi">Add a Wi-Fi Configuration</string>
+
+    <string name="message_write_progress">Writing to Tag..</string>
+    <string name="message_write_success">Successfully written to Tag !</string>
+    <string name="write_progress_dialog">Write Progress Dialog</string>
+
+    <string name="txt_silence_lable">Configure Volume Settings</string>
+    <string name="silence_mod">Silence Mod</string>
+    <string name="ringer_mode">Ringer Mod</string>
+    <string name="title_write_volumesetting">Add Volume Setting Configuration</string>
+
+    <string name="title_write_contact">Configure Contact</string>
+    <string name="txtFirstNameMsg">First name:</string>
+    <string name="txtLastNameMsg">Last name:</string>
+    <string name="txtEmailMsg">Email:</string>
+    <string name="txtPhoneMsg">Phone number:</string>
+
+    <string name="firstNameEmptyMsg">Please enter first name</string>
+    <string name="lastNameEmptyMsg">Please enter last name</string>
+    <string name="emailEmptyMsg">Please enter email</string>
+    <string name="phoneEmptyMsg">Please enter phone number</string>
+
+    <string name="textConfigureContactMsg">Configure a Contact</string>
+
+    <string name="read_tag">READ_TAG</string>
+    <string name="write_tag">WRITE_TAG</string>
+    <string name="adminCheckbox">Admin User</string>
+
+    <string name="write_tag_message">Write to Tag</string>
+    <string name="write_dialog_message">Please tap on the NFC Tag</string>
+    <string name="write_dialog_title">Write on NFC Tag</string>
+
+    <string name="volumeRadiogrp_empty_message">Please select volume configuration</string>
+
+
+
+
+    <string name="wifi_connect">WI-FI</string>
+    <string name="wifi_not_enabled">Wi-Fi is disabled. Please enable Wi-Fi in settings</string>
+    <string name="no_wifi_connect_details">Wi-Fi connection details is empty</string>
+    <string name="wifi_connect_fail">Wi-Fi connect failed</string>
+    <string name="SSID_discovery_failed">Wi-Fi Network scan failed to find Wi-Fi network</string>
+    <string name="wifi_network_list_update_failed">Failed to add or update the WiFi network list </string>
+    <string name="wifi_connection_success">Successfully connetced to the Wi-Fi Network</string>
+    <string name="wifi_network_enable_failed">Failed to enable WiFi Network</string>
+    <string name="wifi_network_enable_success">Successfully enabled WiFi Network</string>
+    <string name="wifi_connect_start">Initiating Wi-Fi connection process</string>
+    <string name="wifi_state_ASSOCIATED">ASSOCIATED</string>
+    <string name="wifi_state_ASSOCIATING">ASSOCIATING</string>
+    <string name="wifi_state_Authenticating">Authenticating</string>
+    <string name="wifi_state_COMPLETED">COMPLETED</string>
+    <string name="wifi_state_Disconnected">Disconnected</string>
+    <string name="wifi_state_DORMANT">DORMANT</string>
+    <string name="wifi_state_FOUR_WAY_HANDSHAKE">FOUR_WAY_HANDSHAKE</string>
+    <string name="wifi_state_GROUP_HANDSHAKE">GROUP_HANDSHAKE</string>
+    <string name="wifi_state_INACTIVE">INACTIVE</string>
+    <string name="wifi_state_INTERFACE_DISABLED">INTERFACE_DISABLED</string>
+    <string name="wifi_state_INVALID">INVALID</string>
+    <string name="wifi_state_SCANNING">SCANNING</string>
+    <string name="wifi_state_UNINITIALIZED">UNINITIALIZED</string>
+    <string name="wifi_state_Unknown">Unknown</string>
+    <string name="wifi_state_Authentication_Error">Authentication Error</string>
+
+
+
+
+
+</resources>
